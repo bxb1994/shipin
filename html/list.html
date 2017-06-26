@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>全部分类</title>
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <script src="../js/jquery-3.1.0.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        function resize(originSize,type){
+            type=type || "x";
+            if(type == "x"){
+                var widths=document.documentElement.clientWidth;
+                var bili=widths/originSize*100;
+            }else if(type == "y"){
+                var heights=document.documentElement.clientHeight;
+                var bili=heights/originSize*100;
+            }
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+        }
+        $(function(){
+            resize(750);
+        })
+    </script>
+</head>
+<body onload="loaded()">
+<div class="icon list-top">
+    <span>全部分类</span>
+</div>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="list" style="background-image: url(img/fl_01.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_02.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_03.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_04.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_06.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_07.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_08.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_09.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_10.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_11.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_12.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_13.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_14.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_15.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_16.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_17.png)">
+        </div>
+        <div class="list" style="background-image: url(img/fl_18.png)">
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { bounceEasing: 'elastic', bounceTime: 1200,click:true });
+    }
+</script>
+</html>

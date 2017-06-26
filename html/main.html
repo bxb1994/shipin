@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <script src="../js/jquery-3.1.0.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        function resize(originSize,type){
+            type=type || "x";
+            if(type == "x"){
+                var widths=document.documentElement.clientWidth;
+                var bili=widths/originSize*100;
+            }else if(type == "y"){
+                var heights=document.documentElement.clientHeight;
+                var bili=heights/originSize*100;
+            }
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+            console.log(bili+"px");
+        }
+        $(function(){
+            resize(1334,"y");
+        })
+    </script>
+</head>
+<body onload="loaded()">
+    <div id="main-top">
+            <div class="icon more"></div>
+            <div class="top-mes">
+                <div class="head-scul">
+                    <div class="scul-bor">
+                        <div class="scul-back">
+                        </div>
+                    </div>
+                </div>
+                <a href="login.html" class="to-login">点击登录后可评论</a>
+                <ul class="main-mes">
+                    <li class="icon collection">
+                        <a href="javascript:;">我的收藏</a>
+                    </li>
+                    <li class="icon comment">
+                        <a href="javascript:;">我的评论</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div id="wrapper">
+            <div id="scroller">
+                <ul class="more-mes">
+                    <li><a href="javascript:;">我的消息</a></li>
+                    <li><a href="javascript:;">我的关注</a></li>
+                    <li><a href="cache.html">我的缓存</a></li>
+                    <li><a href="javascript:;">功能开关</a></li>
+                    <li><a href="javascript:;">我要投稿</a></li>
+                    <li><a href="javascript:;">意见反馈</a></li>
+                </ul>
+                <span class="version">version 1.0.0 build 2016</span>
+            </div>
+        </div>
+<footer>
+<ul class="bot-nav">
+    <li class="icon choice"><a href="../index.html">精选</a></li>
+    <li class="icon discover"><a href="discover.html">发现</a></li>
+    <li class="icon focus"><a href="focus.html">关注</a></li>
+    <li class="icon main"><a href="#">我的</a></li>
+</ul>
+</footer>
+</body>
+<script>
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { bounceEasing: 'elastic', bounceTime: 1200,click:true });
+    }
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+//    var mySwiper1 = new Swiper('#swiper-container1',{
+//        watchSlidesProgress : true,
+//        watchSlidesVisibility : true,
+//        slidesPerView : 4,
+//        onTap: function(){
+//            mySwiper3.slideTo( mySwiper2.clickedIndex)
+//        }
+//    })
+</script>
+</html>

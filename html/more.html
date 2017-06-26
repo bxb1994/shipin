@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>document</title>
+    <link rel="stylesheet" href="../css/more.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <script src="../js/jquery-3.1.0.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        function resize(originSize,type){
+            type=type || "x";
+            if(type == "x"){
+                var widths=document.documentElement.clientWidth;
+                var bili=widths/originSize*100;
+            }else if(type == "y"){
+                var heights=document.documentElement.clientHeight;
+                var bili=heights/originSize*100;
+            }
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+            console.log(bili+"px");
+        }
+        $(function(){
+            resize(1334,"y");
+        })
+    </script>
+</head>
+<body>
+<div class="icon more-top">
+    <span>更多</span>
+</div>
+<ul class="more-mes">
+    <li><a href="javascript:;">用户协议</a></li>
+    <li><a href="javascript:;">视频功能声明</a></li>
+    <li><a href="javascript:;">版权举报</a></li>
+    <li><a href="javascript:;">前往App Store评分</a></li>
+</ul>
+</body>
+</html>

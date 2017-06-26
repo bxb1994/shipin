@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>document</title>
+    <link rel="stylesheet" href="../css/cache.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <script src="../js/jquery-3.1.0.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        function resize(originSize,type){
+            type=type || "x";
+            if(type == "x"){
+                var widths=document.documentElement.clientWidth;
+                var bili=widths/originSize*100;
+            }else if(type == "y"){
+                var heights=document.documentElement.clientHeight;
+                var bili=heights/originSize*100;
+            }
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+            console.log(bili+"px");
+        }
+        $(function(){
+            resize(1334,"y");
+        })
+    </script>
+</head>
+<body>
+<div class="icon more-top">
+    <span>更多</span>
+    <span class="bj">编辑</span>
+</div>
+<ul class="cache-mes">
+    <li class="choice">手动缓存</li>
+    <li>自动缓存</li>
+</ul>
+<div class="no">
+    <span>你缓存的视频可以在这里找到</span>
+</div>
+</body>
+</html>

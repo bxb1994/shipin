@@ -1,0 +1,216 @@
+html,body,ul,li,h3,h4,h5,h6,a,span{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    position: relative;
+    font-family: 'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+/*main*/
+#main-top{
+    position: relative;
+    width:100%;
+    height:5.18rem;
+    background: #f9f9f9;
+    border-bottom: 0.01rem solid #adadad;
+}
+.more:before{
+    position: absolute;
+    content: '\e616';
+    right:0.24rem;
+    top:0.64rem;
+    font-size: 0.38rem;
+    font-weight: bold;
+}
+.top-mes{
+    position: relative;
+    padding:0 1.12rem;
+    height:3.93rem;
+    top:1.25rem;
+}
+.head-scul{
+    width:100%;
+    height:1.6rem;
+}
+.scul-bor{
+    position: relative;
+    width:1.58rem;
+    height:1.58rem;
+    border:0.01rem solid #b5b5b5;
+    border-radius: 50%;
+    margin:0 auto;
+}
+.scul-back{
+    position:absolute;
+    width:1.52rem;
+    height:1.52rem;
+    background: #ccc url(../img/eye.png) no-repeat center;
+    background-size:0.8rem 0.53rem;
+    border-radius: 50%;
+    left:0;right:0;bottom:0;top:0;
+    margin:auto;
+}
+.to-login{
+    width:100%;
+    display: block;
+    font-size: 0.25rem;
+    text-align: center;
+    margin-top: 0.38rem;
+    color:#444;
+}
+.main-mes{
+    position: relative;
+    width:100%;
+    height:0.6rem;
+    margin-top: 0.78rem;
+}
+.main-mes li{
+    width:50%;
+    height:100%;
+    box-sizing: border-box;
+    float:left;
+    line-height: 0.6rem;
+    color:#888888;
+}
+.main-mes li:first-child{
+    border-right: 0.01rem solid #adadad;
+    text-align: left;
+}
+.main-mes li:last-child{
+    text-align: right;
+}
+.collection:before{
+    content: '\e64f';
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+.main-mes .comment{
+    line-height: 0.7rem;
+}
+.comment:before{
+    content: '\e641';
+    font-size: 0.42rem;
+    font-weight: bold;
+}
+.main-mes li a{
+    color:#888888;
+    line-height: 0.6rem;
+    font-size: 0.26rem;
+}
+.main-mes li:last-child a{
+    position: relative;
+    top:-0.1rem;
+}
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 5.2rem;
+    bottom: 0.99rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+#scroller .ul{
+    width:100%;
+}
+.more-mes li{
+    display: block;
+    width:100%;
+    height:1.04rem;
+    margin-top: 0.58rem;
+    text-align: center;
+    line-height: 1.04rem;
+    font-size: 0.31rem;
+}
+.more-mes li:first-child{
+    margin-top: 1.07rem;
+}
+.more-mes li a{
+    display: block;
+    width:100%;
+    height:100%;
+    color:#5b5b5b;
+}
+.version{
+    display: block;
+    font-size: 0.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color:#b8b8b8;
+    margin-bottom: 0.7rem;
+}
+footer{
+    position: absolute;
+    width:100%;
+    height:0.98rem;
+    border-top:0.01rem solid #b2b2b2;
+    bottom:0;
+    left:0;
+    background: #f6f6f6;
+}
+.bot-nav{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.bot-nav li{
+    width:25%;
+    float: left;
+    height:100%;
+    text-align: center;
+    color:#adadad;
+}
+.bot-nav li a{
+    display:block;
+    font-size: 0.19rem;
+    color:#adadad;
+}
+.choice:before,.discover:before,.focus:before,.main:before{
+    font-size: 0.4rem;
+    display: block;
+    margin-top: 0.12rem;
+}
+.choice:before{
+    content: '\e6cb';
+}
+.discover:before{
+    content: '\e933';
+}
+.focus:before{
+    content:'\e606'
+}
+.main:before{
+    content: '\e608';
+}
